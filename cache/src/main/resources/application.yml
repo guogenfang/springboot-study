@@ -1,0 +1,30 @@
+server:
+  port: ${random.int[10000,19999]}
+
+spring:
+
+  redis:
+    host: 192.168.60.111
+    port: 6379
+    database: 0 # Redis 数据库号，默认为 0 。
+    timeout: 30000 # Redis 连接超时时间，单位：毫秒。
+    lettuce:
+      pool:
+        max-active: 200 # 连接池最大连接数，默认为 8 。使用负数表示没有限制。
+        min-idle: 10    # 默认连接数最小空闲的连接数，默认为 8 。使用负数表示没有限制
+        max-idle: 20    # 默认连接池最小空闲的连接数，默认为 0 。允许设置 0 和 正数。
+        max-wait: -1    # 连接池最大阻塞等待时间，单位：毫秒。默认为 -1 ，表示不限制。
+
+  cache:
+    redis:
+      use-key-prefix: true
+      cache-null-values: false
+      time-to-live: 1d
+      key-prefix: ggf-cache-
+    type: redis
+
+logging:
+  level:
+    org.springframework: debug
+  pattern:
+    console: '%magenta(%d{yyyy-MM-dd HH:mm:ss.SSS}) %highlight(%-5level) %green([%thread])  %logger{81} \(%file:%line\) : %highlight(%m) %n'

@@ -1,1 +1,1 @@
-# springboot-study
+# 将springboot的应用独立在每个模块引用，便于查看源码、执行过程

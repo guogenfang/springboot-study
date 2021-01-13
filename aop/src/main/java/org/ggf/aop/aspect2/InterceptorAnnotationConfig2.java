@@ -1,4 +1,4 @@
-package org.ggf.aop.t2;
+package org.ggf.aop.aspect2;
 
 import org.aopalliance.aop.Advice;
 import org.ggf.aop.TimesListen;

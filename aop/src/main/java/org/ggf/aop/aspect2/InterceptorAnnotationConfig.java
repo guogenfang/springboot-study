@@ -1,4 +1,4 @@
-package org.ggf.aop.t2;
+package org.ggf.aop.aspect2;
 
 import org.ggf.aop.TimesListen;
 import org.springframework.aop.support.DefaultPointcutAdvisor;

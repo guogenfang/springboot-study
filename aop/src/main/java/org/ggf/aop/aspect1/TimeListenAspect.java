@@ -1,4 +1,4 @@
-package org.ggf.aop.t1;
+package org.ggf.aop.aspect1;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;

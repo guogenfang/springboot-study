@@ -1,4 +1,4 @@
-package org.ggf.aop.t2;
+package org.ggf.aop.aspect2;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
